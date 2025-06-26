@@ -12,7 +12,7 @@
     "LEFT RIGHT"
 }
 
-.aside {
+.sidebar{
   grid-area: LEFT;
   position: fixed;
 }
@@ -139,7 +139,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 20px 80px;
+  padding: 50px 20px 90px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-right: 1px solid #D3DFFF;
