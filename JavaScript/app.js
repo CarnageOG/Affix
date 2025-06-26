@@ -18,3 +18,17 @@ const userBtn = document.querySelectorAll('.icon-btn')[1];
       userModal.classList.add('hidden');
     }
   });
+
+// ბურგერ მენიუ
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('open');
+}
+document.addEventListener('click', function(event) {
+  const sidebar = document.querySelector('.sidebar');
+  const toggleBtn = document.querySelector('.menu-toggle');
+
+  if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target)) {
+    sidebar.classList.remove('open');
+  }
+});

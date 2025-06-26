@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
     <script src="JavaScript/app.js" defer></script>
@@ -8,9 +11,12 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
-            <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
-        </a>
+        <div class="header-left">
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <a href="#" class="logo">
+                <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
+            </a>
+        </div>
         <div class="right-header">
             <div class="search-box">
                 <img src="images/Search.png" alt="Search Icon" class="icon">
