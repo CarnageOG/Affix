@@ -1,8 +1,5 @@
-// ისარი
-document.addEventListener("DOMContentLoaded", function () {
-  const arrowImg = document.getElementById("arrowImg");
-
-  arrowImg.addEventListener("click", () => {
-    arrowImg.classList.toggle("rotated");
-  });
-});
+function toggleDropdown(event) {
+  event.preventDefault();
+  const container = event.currentTarget.parentElement;
+  container.classList.toggle('open');
+}
