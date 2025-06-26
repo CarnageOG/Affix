@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.img-logo{
+    width: 100px;
+    height: 30px;
+}
+
+.dropdown-arrow{
+  margin-right: 50px;
+}
+
+.dropdown-arrow img {
+  width: 12px;
+  height: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow img.rotated {
+  transform: rotate(180deg);
+}
