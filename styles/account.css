@@ -154,6 +154,12 @@
   border-radius: 6px;
 }
 
+.img-error{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
 button#submitBtn, button#emailSubmit, button#phoneSubmit {
   margin-top: 16px;
   width: 100%;
