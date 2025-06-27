@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/sites.css">
+    <script src="JavaScript/app.js" defer></script>
+    <script src="JavaScript/sites.js" defer></script>
+    <title>Account Settings</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <a href="index.html" class="logo">
+                <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
+            </a>
+        </div>
+        <div class="right-header">
+            <div class="search-box">
+                <img src="images/Search.png" alt="Search Icon" class="icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="icons">
+                <button class="icon-btn">
+                    <img src="images/ring.png" alt="Bell Icon" class="icon">
+                </button>
+                <button class="icon-btn">
+                    <img src="images/user.png" alt="User Icon" class="icon">
+                </button>
+            </div> 
+        </div>
+    </header>
+    <div id="user-modal" class="user-modal hidden">
+        <p class="user-email">Anna@Gmail.Com</p>
+        <p class="user-phone">123 456 789</p>
+        <button class="logout-btn">Logout</button>
+    </div>
+    <div class="layout">
+        <aside class="sidebar">
+            <nav class="menu">
+                <a href="site.html" class="menu-item">
+                    <div class="icon-wrapper">
+                        <img src="images/laptop.png" alt="My Sites" class="icon">
+                    </div>
+                    <p class="p-sidebar">My Sites</p>
+                </a>
+                <div class="menu-container">
+                    <div class="menu-header" onclick="toggleDropdown(event)">
+                        <div class="icon-wrapper">
+                        <img src="images/bank.png" alt="Billing" class="icon">
+                        </div>
+                        <p class="p-sidebar">Billing</p>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <a href="#">Subscriptions</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Payment Methods</a>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <a href="account.html" class="menu-item">
+                    <div class="icon-wrapper">
+                        <img src="images/user.png" alt="Account Settings" class="icon">
+                    </div>
+                    <p class="p-sidebar">Account Settings</p>
+                </a>
+            </div>
+        </aside>
+        <section class="site-wrapper">
+            <a href="mysites.html" class="div-site">
+                <div class="site-card">
+                    <div class="div-h2-button">
+                        <h2>My sites</h2>
+                         <button class="add-site-btn">
+                            <img src="images/plus.png" alt="Plus" class="icon" />
+                            Add New Site
+                        </button>
+                    </div>
+                    <div class="site-field">
+                        <h3>Site 1</h3>
+                        <div class="site-value"  id="emailDisplay">Active</div>
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                    </div>
+                </div>
+            </a>
+        </section> 
+    <footer>
+    </footer>
+</body>
+</html>

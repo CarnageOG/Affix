@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-wrapper {
+  background-color: #F1F5FF;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.div-site {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.site-card h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.site-card h3 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.site-field {
+  background-color: rgba(194, 205, 231, 0.2);
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.site-field:hover {
+  background-color: #e8eef9;
+}
+
+.site-field > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.site-value {
+  font-size: 14px;
+  color: #000000;
+}
+
+.field input {
+  font: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.arrow-icon {
+  width: 6px;
+  height: 11px;
+}
+
+.div-h2-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-site-btn {
+  background-color: #0078B7;
+  color: #FFFFFF;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}

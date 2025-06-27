@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
 section{
   background-color: #F1F5FF;
 }
 
 .layout {
-  font-family: 'Noto Sans Georgian', sans-serif;
   display: grid;
   grid-template-columns: 16% 84%;
 }
