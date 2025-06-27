@@ -6,8 +6,10 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/account.css">
     <script src="JavaScript/app.js" defer></script>
-    <title>Affix</title>
+    <script src="JavaScript/account.js" defer></script>
+    <title>Account Settings</title>
 </head>
 <body>
     <header class="header">
@@ -69,9 +71,31 @@
                 </a>
             </div>
         </aside>
-        <section>
-        </section>
-    </div> 
+        <section class="page-wrapper">
+            <div class="container">
+                <div class="card">
+                    <h2>Profile Information</h2>
+                    <div class="field" onclick="editField(this, 'email')">
+                    <h3>Email</h3>
+                    <div class="value">Example@Affix.Ge</div>
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                    </div>
+                    <div class="field" onclick="editField(this, 'phone')">
+                    <h3>Phone</h3>
+                    <div class="value">123 456 789</div>
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Change Password</h2>
+                    <div class="field" onclick="editField(this, 'password')">
+                    <h3>Current Password</h3>
+                    <div class="value">•••••••</div>
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                    </div>
+                </div>
+            </div>
+        </div> 
     <footer>
     </footer>
 </body>
