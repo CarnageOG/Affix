@@ -1,13 +1,31 @@
-// პაროლის მოდალი
-
-const modal = document.getElementById("passwordModal");
+// Modal 
+const passwordModal = document.getElementById("passwordModal");
 const emailModal = document.getElementById("emailModal");
 const phoneModal = document.getElementById("phoneModal");
-const correctCurrentPassword = "123456";
 
+// Input
+const currentInput = document.getElementById("current-password");
+const newInput = document.getElementById("new-password");
+const confirmInput = document.getElementById("confirm-password");
+const emailInput = document.getElementById("email-input");
+const phoneInput = document.getElementById("phone-input");
+
+// Display 
+const emailDisplay = document.getElementById("emailDisplay");
+const phoneDisplay = document.getElementById("phoneDisplay");
+const passwordDisplay = document.getElementById("passwordDisplay");
+
+// Error 
+const currentError = document.getElementById("current-error");
+const newError = document.getElementById("new-error");
+const confirmError = document.getElementById("confirm-error");
+const emailError = document.getElementById("email-error");
+const phoneError = document.getElementById("phone-error");
+
+// Open modal functions
 function openModal(e) {
   e.stopPropagation();
-  modal.style.display = "flex";
+  passwordModal.style.display = "flex";
 }
 function openEmailModal(e) {
   e.stopPropagation();
@@ -18,66 +36,49 @@ function openPhoneModal(e) {
   phoneModal.style.display = "flex";
 }
 
+// მოდალის დახურვა 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    modal.style.display = "none";
-    emailModal.style.display = "none";
-    phoneModal.style.display = "none";
+    [passwordModal, emailModal, phoneModal].forEach(m => m.style.display = "none");
   }
 });
-
-[modal, emailModal, phoneModal].forEach(m => {
-  m.addEventListener("click", (e) => {
-    if (e.target === m) m.style.display = "none";
+[passwordModal, emailModal, phoneModal].forEach(modal => {
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
   });
 });
 
+// Validation functions
 function isValidPassword(pwd) {
-  const regex = /^[A-Za-z0-9!@#$%^&*]{6,}$/;
-  return regex.test(pwd);
+  return /^[A-Za-z0-9!@#$%^&*]{6,}$/.test(pwd);
 }
 function isValidEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 function isValidPhone(phone) {
   return /^[\d\s]{9,15}$/.test(phone);
 }
 
-const currentInput = document.getElementById("current-password");
-const newInput = document.getElementById("new-password");
-const confirmInput = document.getElementById("confirm-password");
-const emailInput = document.getElementById("email-input");
-const phoneInput = document.getElementById("phone-input");
-
+// შეყვანის ვალიდაციის მსმენელები
 currentInput.addEventListener("input", () => {
   const current = currentInput.value.trim();
-  const error = document.getElementById("current-error");
-  error.style.display = current !== correctCurrentPassword ? "block" : "none";
+  currentError.style.display = current !== "123456" ? "block" : "none";
 });
 newInput.addEventListener("input", () => {
-  const value = newInput.value.trim();
-  const error = document.getElementById("new-error");
-  error.style.display = !isValidPassword(value) ? "block" : "none";
+  newError.style.display = !isValidPassword(newInput.value.trim()) ? "block" : "none";
 });
 confirmInput.addEventListener("input", () => {
-  const confirm = confirmInput.value.trim();
-  const newVal = newInput.value.trim();
-  const error = document.getElementById("confirm-error");
-  error.style.display = confirm !== newVal ? "block" : "none";
+  confirmError.style.display = confirmInput.value.trim() !== newInput.value.trim() ? "block" : "none";
 });
 emailInput.addEventListener("input", () => {
-  const emailVal = emailInput.value.trim();
-  const error = document.getElementById("email-error");
-  error.style.display = !isValidEmail(emailVal) ? "block" : "none";
+  emailError.style.display = !isValidEmail(emailInput.value.trim()) ? "block" : "none";
 });
 phoneInput.addEventListener("input", () => {
-  const phoneVal = phoneInput.value.trim();
-  const error = document.getElementById("phone-error");
-  error.style.display = !isValidPhone(phoneVal) ? "block" : "none";
+  phoneError.style.display = !isValidPhone(phoneInput.value.trim()) ? "block" : "none";
 });
 
-function setupButtonLoading(btnId, spinnerId, textId, modalRef) {
+// Loading
+function setupButtonLoading(btnId, spinnerId, textId, modalRef, callback) {
   const btn = document.getElementById(btnId);
   const spinner = document.getElementById(spinnerId);
   const text = document.getElementById(textId);
@@ -92,10 +93,33 @@ function setupButtonLoading(btnId, spinnerId, textId, modalRef) {
       text.style.display = "inline";
       btn.disabled = false;
       modalRef.style.display = "none";
+
+      if (typeof callback === "function") callback();
     }, 2000);
   });
 }
 
-setupButtonLoading("submitBtn", "btnSpinner", "btnText", modal);
-setupButtonLoading("emailSubmit", "emailSpinner", "emailBtnText", emailModal);
-setupButtonLoading("phoneSubmit", "phoneSpinner", "phoneBtnText", phoneModal);
+// ცვლილების დამახსოვრება
+setupButtonLoading("submitBtn", "btnSpinner", "btnText", passwordModal, () => {
+  if (
+    currentInput.value.trim() === "123456" &&
+    isValidPassword(newInput.value.trim()) &&
+    confirmInput.value.trim() === newInput.value.trim()
+  ) {
+    passwordDisplay.innerText = "•••••••"; 
+  }
+});
+
+setupButtonLoading("emailSubmit", "emailSpinner", "emailBtnText", emailModal, () => {
+  const newEmail = emailInput.value.trim();
+  if (isValidEmail(newEmail)) {
+    emailDisplay.innerText = newEmail;
+  }
+});
+
+setupButtonLoading("phoneSubmit", "phoneSpinner", "phoneBtnText", phoneModal, () => {
+  const newPhone = phoneInput.value.trim();
+  if (isValidPhone(newPhone)) {
+    phoneDisplay.innerText = newPhone;
+  }
+});
