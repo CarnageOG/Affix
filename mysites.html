@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/sites.css">
     <script src="JavaScript/app.js" defer></script>
     <script src="JavaScript/sites.js" defer></script>
-    <title>Account Settings</title>
+    <title>My Sites</title>
 </head>
 <body>
     <header class="header">
@@ -72,22 +72,67 @@
             </div>
         </aside>
         <section class="site-wrapper">
-            <a href="mysites.html" class="div-site">
+            <div class="div-site">
                 <div class="site-card">
                     <div class="div-h2-button">
                         <h2>My sites</h2>
-                         <button class="add-site-btn">
+                        <button class="add-site-btn">
                             <img src="images/plus.png" alt="Plus" class="icon" />
                             Add New Site
                         </button>
+                        <div class="modal-overlay" id="siteModal">
+                            <div class="modal">
+                                <h2>Add New Site</h2>
+                                <label>Website Name</label>
+                                <div class="input-check-group">
+                                    <input type="text">
+                                    <button class="check-btn">Check</button>
+                                </div>
+                                <div class="warning">
+                                    <img src="images/warning.png" alt="Warning" />
+                                    Allowed Characters Are: Latin Characters From 'a' To 'z' And/Or Numbers Without Any Gaps
+                                </div>
+                                <div class="pay-choice">
+                                    <div class="site-type">
+                                        <div class="title1">
+                                            <p class="p-type">Corporate</p>
+                                            <div class="badge">TOP</div>
+                                        </div>
+                                        <div class="div-money">
+                                            <div class="price">$22.50</div>
+                                            <div class="discount">Save 10%</div>
+                                        </div>
+                                    </div>
+                                    <div class="site-type">
+                                        <div class="title2">
+                                            <p class="p-v">Photo/Video Gallery</p>
+                                        </div>
+                                        <div class="div-money">
+                                            <div class="price">$12.50</div>
+                                            <div class="discount">Save 5%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label>Select Period</label>
+                                <select>
+                                    <option>1 month</option>
+                                    <option>3 months</option>
+                                    <option>6 months</option>
+                                </select>
+                                <button class="confirm-btn" id="addSiteBtn">
+                                    <span class="spinner" id="addSiteSpinner"></span>
+                                    <span id="addSiteBtnText">Add New Site</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="site-field">
+                    <a href="site.html" class="site-field">
                         <h3>Site 1</h3>
                         <div class="site-value"  id="emailDisplay">Active</div>
                         <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
-                    </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         </section> 
     <footer>
     </footer>
