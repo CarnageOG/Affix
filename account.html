@@ -78,12 +78,40 @@
                     <div class="field">
                     <h3>Email</h3>
                     <div class="value">Example@Affix.Ge</div>
-                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon" onclick="openEmailModal(event)">
+                    </div>
+                    <div class="modal-overlay" id="emailModal">
+                        <div class="modal">
+                            <h2>Change Email</h2>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email-input" placeholder="example@affix.ge">
+                                <div class="error" id="email-error">Please enter a valid email address.</div>
+                            </div>
+                            <button id="emailSubmit">
+                                <span class="spinner" id="emailSpinner"></span>
+                                <span id="emailBtnText">Change</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="field">
                     <h3>Phone</h3>
                     <div class="value">123 456 789</div>
-                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon"  onclick="openPhoneModal(event)">
+                    </div>
+                    <div class="modal-overlay" id="phoneModal">
+                        <div class="modal">
+                            <h2>Change Phone</h2>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" id="phone-input" placeholder="123 456 789">
+                                <div class="error" id="phone-error">Please enter a valid phone number.</div>
+                            </div>
+                            <button id="phoneSubmit">
+                                <span class="spinner" id="phoneSpinner"></span>
+                                <span id="phoneBtnText">Change</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -91,7 +119,7 @@
                     <div class="field">
                     <h3>Current Password</h3>
                     <div class="value">•••••••</div>
-                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon" onclick="openModal()">
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon" onclick="openModal(event)">
                     </div>
                 </div>
                 <div class="modal-overlay" id="passwordModal">
