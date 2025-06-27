@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+section{
+  background-color: #F1F5FF;
+}
+
 .layout {
   font-family: 'Noto Sans Georgian', sans-serif;
   display: grid;
