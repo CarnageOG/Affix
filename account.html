@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
             </a>
         </div>
@@ -75,12 +75,12 @@
             <div class="container">
                 <div class="card">
                     <h2>Profile Information</h2>
-                    <div class="field" onclick="editField(this, 'email')">
+                    <div class="field">
                     <h3>Email</h3>
                     <div class="value">Example@Affix.Ge</div>
                         <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
                     </div>
-                    <div class="field" onclick="editField(this, 'phone')">
+                    <div class="field">
                     <h3>Phone</h3>
                     <div class="value">123 456 789</div>
                         <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
@@ -88,14 +88,38 @@
                 </div>
                 <div class="card">
                     <h2>Change Password</h2>
-                    <div class="field" onclick="editField(this, 'password')">
+                    <div class="field">
                     <h3>Current Password</h3>
                     <div class="value">•••••••</div>
-                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon">
+                        <img src="images/arrow-right.png" alt="arrow" class="arrow-icon" onclick="openModal()">
+                    </div>
+                </div>
+                <div class="modal-overlay" id="passwordModal">
+                    <div class="modal">
+                        <h2>Change Password</h2>
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <input type="password" id="current-password" />
+                            <div class="error" id="current-error">Incorrect current password.</div>
+                        </div>
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input type="text" id="new-password"/>
+                            <div class="error" id="new-error">Password must be at least 6 characters and only contain letters, numbers, !@#$%^&*.</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm New Password</label>
+                            <input type="text" id="confirm-password"/>
+                            <div class="error" id="confirm-error">Passwords do not match.</div>
+                        </div>
+                        <button id="submitBtn">
+                            <span class="spinner" id="btnSpinner"></span>
+                            <span id="btnText">Change Password</span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </div> 
+        </section> 
     <footer>
     </footer>
 </body>

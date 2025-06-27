@@ -7,7 +7,7 @@
 .layout {
   font-family: 'Noto Sans Georgian', sans-serif;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 16% 84%;
 }
 
 .menu-toggle {
@@ -139,7 +139,7 @@
 /* საიდბარი */
 
 .sidebar {
-  position: fixed;
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
