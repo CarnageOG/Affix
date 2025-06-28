@@ -262,3 +262,17 @@ section{
 .dropdown a:hover {
   background-color: #FFFFFF;
 }
+
+.bottom-aside{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  border-radius: 5px;
+}

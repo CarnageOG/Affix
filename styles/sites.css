@@ -114,7 +114,6 @@
   z-index: 1000;
 }
 
-/* Modal Box */
 .modal {
   background: #FFFFFF;
   border-radius: 16px;
@@ -291,51 +290,6 @@ select {
   white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* შიდა საიტი*/
 
 .site-section{
@@ -400,7 +354,7 @@ select {
 }
 
 .table-row .site-title {
-  color: #6b7280;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .table-row .domain {
