@@ -6,14 +6,15 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/subscribtions.css">
     <script src="JavaScript/app.js" defer></script>
-    <title>Affix</title>
+    <title>My Subscriptions</title>
 </head>
 <body>
     <header class="header">
         <div class="header-left">
             <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
             </a>
         </div>
@@ -40,7 +41,7 @@
     <div class="layout">
         <aside class="sidebar">
             <nav class="menu">
-                <a href="mysites.html" class="menu-item">
+                <a href="site.html" class="menu-item">
                     <div class="icon-wrapper">
                         <img src="images/laptop.png" alt="My Sites" class="icon">
                     </div>
@@ -76,9 +77,50 @@
                 </a>
             </div>
         </aside>
-        <section>
+        <section class="site-section">
+            <div class="wrapper">
+                <div class="site-layout">
+                    <a href="subscribtions.html" class="top-bar">
+                        <img src="images/arrow-left.png" alt="Back"/>
+                        <h2>mail.affix.ge</h2>
+                    </a>
+                    <div class="table">
+                        <div class="table-header">
+                            <div class="sub-title">title</div>
+                            <div class="sub-Meaning">mail.affix.ge</div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-header2">
+                            <div class="sub-title">Current Plan</div>
+                            <div class="sub-Meaning-button">pro
+                                <button class="button-MySubscriptions">upgrade</buuton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-header">
+                            <div class="sub-title">Next Billing Date</div>
+                            <div class="sub-Meaning">11.11.2026</div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-header2">
+                            <div class="sub-title">Auto-Renewal</div>
+                            <div class="sub-Meaning-button">pro
+                                <button class="button-MySubscriptions">Disable</buuton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-header">
+                            <div class="sub-title">amount due</div>
+                            <div class="sub-Meaning">$23</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div> 
     <footer>
     </footer>
 </body>

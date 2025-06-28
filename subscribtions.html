@@ -6,14 +6,15 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/subscribtions.css">
     <script src="JavaScript/app.js" defer></script>
-    <title>Affix</title>
+    <title>Subscriptions</title>
 </head>
 <body>
     <header class="header">
         <div class="header-left">
             <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
             </a>
         </div>
@@ -40,7 +41,7 @@
     <div class="layout">
         <aside class="sidebar">
             <nav class="menu">
-                <a href="mysites.html" class="menu-item">
+                <a href="site.html" class="menu-item">
                     <div class="icon-wrapper">
                         <img src="images/laptop.png" alt="My Sites" class="icon">
                     </div>
@@ -76,9 +77,31 @@
                 </a>
             </div>
         </aside>
-        <section>
+        <section class="subscribtions-section">
+            <div class="subscribtions-wrapper">
+                <div class="subscribtions-layout">
+                    <div class="subscribtions-table">
+                        <div class="subscribtions-table-header">
+                            <div>Subscription</div>
+                            <div>subscription type</div>
+                            <div>Expiration date</div>
+                            <div>Auto-renewal</div>
+                        </div>
+                        <div class="subscribtions-table-row">
+                            <div>mail.affix.ge</div>
+                            <div>pro</div>
+                            <div>2025-06-27</div>
+                            <div class="arrow-cell">
+                                2025-06-27
+                                <a href="mysubscribtions.html">
+                                    <img src="images/arrow-right.png" alt="arrow" class="arrow-icon" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div> 
     <footer>
     </footer>
 </body>

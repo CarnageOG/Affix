@@ -1,0 +1,147 @@
+.subscribtions-section{
+  background-color: #F1F5FF;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.subscribtions-wrapper {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribtions-layout{
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subscribtions-table {
+  overflow: hidden;
+}
+
+.subscribtions-table-header{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 16px 12px;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 600;
+  color: #000000;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.subscribtions-table-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 16px 12px;
+  font-size: 14px;
+  background-color: rgba(194, 205, 231, 0.2);
+  color: #000000; 
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.arrow-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.arrow-icon {
+  width: 6px;
+  height: 11px;
+}
+
+/* შიდა გამოწერა */
+
+.site-section{
+  background-color: #F1F5FF;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.wrapper {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-layout{
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.top-bar h2 {
+  font-size: 22px;
+  color: #000000;
+}
+
+.table {
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px 10px;
+  font-size: 14px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.table-header2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 5.5px 10px;
+  font-size: 14px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.sub-title{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.sub-Meaning{
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+}
+
+.sub-Meaning-button{
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-MySubscriptions{
+  padding: 10px;
+  color: #23A2E4;
+  background-color: #DFF2FF;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
