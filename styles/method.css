@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.method-wrapper {
+  background-color: #F1F5FF;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.div-method {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.method-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.method-card h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.method-h2-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-site-btn {
+  background-color: #0078B7;
+  color: #FFFFFF;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* მოდალი */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.payment-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.payment-modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.h2-cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payment-logos {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-logos img {
+  width: 33px;
+  height: 25px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.form-group input {
+  padding: 15px;
+  border: none;
+  background: #F5F5F5;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.submit-card {
+  width: 100%;
+  background: #0078B7;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.spinner {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.submit-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

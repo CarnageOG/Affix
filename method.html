@@ -6,9 +6,10 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
-    <link rel="stylesheet" href="styles/sites.css">
+    <link rel="stylesheet" href="styles/method.css">
     <script src="JavaScript/app.js" defer></script>
-    <title>Site 1</title>
+    <script src="JavaScript/method.js" defer></script>
+    <title>Payment History</title>
 </head>
 <body>
     <header class="header">
@@ -17,6 +18,7 @@
             <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
             </a>
+            <h1>Payment Methods</h1>
         </div>
         <div class="right-header">
             <div class="search-box">
@@ -77,39 +79,56 @@
                 </a>
             </div>
         </aside>
-        <section class="site-section">
-            <div class="wrapper">
-                <div class="site-layout">
-                    <a href="mysites.html" class="top-bar">
-                        <img src="images/arrow-left.png" alt="Back"/>
-                        <h2>Site1</h2>
-                    </a>
-                    <div class="table">
-                        <div class="table-header">
-                            <div>Site Title</div>
-                            <div>Domain</div>
-                            <div>Trial Version End Date</div>
-                            <div>Next Billing Date</div>
-                            <div>Amount Due</div>
-                        </div>
-                        <div class="table-row">
-                            <div class="site-title">Site1</div>
-                            <div class="domain">Example@Affix.Ge</div>
-                            <div>11.11.2025</div>
-                            <div>12.12.2025</div>
-                            <div>$23</div>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn-outline">Subscriptions</button>
-                        <button class="btn-danger">
-                            <img src="images/trash.png" alt="Trash" />
-                            Delete Site
+        <section class="method-wrapper">
+            <div class="div-method">
+                <div class="method-card">
+                    <div class="method-h2-button">
+                        <h2>Cards</h2>
+                        <button class="add-site-btn">
+                            <img src="images/plus.png" alt="Plus" class="icon" />
+                            Add New Card
                         </button>
+                        <div class="modal-overlay" id="cardModal">
+                            <div class="payment-modal">
+                                <div class="h2-cards">
+                                    <h2>Add Payment Method</h2>
+                                    <div class="payment-logos">
+                                        <img src="images/mastercard.png" alt="Mastercard">
+                                        <img src="images/visa.png" alt="Visa">
+                                    </div>
+                                </div>
+                                <form class="payment-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="card-name">Name And Surname</label>
+                                            <input type="text" id="card-name" placeholder="placeholder text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="card-number">Card Number</label>
+                                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry">Expiry Date</label>
+                                            <input type="text" id="expiry" placeholder="mm / yy" maxlength="7">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvc">CVC Code</label>
+                                            <input type="text" id="cvc" placeholder="cvc">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="submit-card" id="submitBtn">
+                                        <span class="spinner" id="spinner"></span>
+                                        <span id="submitText">Add New Card</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
     <footer>
     </footer>
 </body>
