@@ -6,9 +6,9 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
-    <link rel="stylesheet" href="styles/sites.css">
+    <link rel="stylesheet" href="styles/history.css">
     <script src="JavaScript/app.js" defer></script>
-    <title>Site 1</title>
+    <title>Payment History</title>
 </head>
 <body>
     <header class="header">
@@ -41,7 +41,7 @@
     <div class="layout">
         <aside class="sidebar">
             <nav class="menu">
-                <a href="mysites.html" class="menu-item">
+                <a href="site.html" class="menu-item">
                     <div class="icon-wrapper">
                         <img src="images/laptop.png" alt="My Sites" class="icon">
                     </div>
@@ -77,35 +77,62 @@
                 </a>
             </div>
         </aside>
-        <section class="site-section">
-            <div class="wrapper">
-                <div class="site-layout">
-                    <a href="mysites.html" class="top-bar">
-                        <img src="images/arrow-left.png" alt="Back"/>
-                        <h2>Site1</h2>
-                    </a>
-                    <div class="table">
-                        <div class="table-header">
-                            <div>Site Title</div>
-                            <div>Domain</div>
-                            <div>Trial Version End Date</div>
-                            <div>Next Billing Date</div>
-                            <div>Amount Due</div>
+        <section class="history-section">
+            <div class="history-wrapper">
+                <div class="history-layout">
+                    <div class="history-table">
+                        <div class="history-table-header">
+                            <div>Date</div>
+                            <div>Description</div>
+                            <div>Amount</div>
+                            <div>Payment Method</div>
+                            <div>status</div>
                         </div>
-                        <div class="table-row">
-                            <div class="site-title">Site1</div>
-                            <div class="domain">Example@Affix.Ge</div>
-                            <div>11.11.2025</div>
-                            <div>12.12.2025</div>
-                            <div>$23</div>
+                        <div class="history-table-row">
+                            <div>Dec 20, 2024</div>
+                            <div>Hosting Renewal</div>
+                            <div>$29.99</div>
+                            <div class="div-code">
+                                <img src="images/visa.png" alt="visa" class="card-icon" />
+                                Visa •••• 4242
+                            </div>
+                            <div class="history-cell">
+                                <div class="div-completed">Completed</div>
+                                <button class="button-download">
+                                    <img src="images/downloads.png" alt="downloads-icon" class="downloads-icon" />
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn-outline">Subscriptions</button>
-                        <button class="btn-danger">
-                            <img src="images/trash.png" alt="Trash" />
-                            Delete Site
-                        </button>
+                        <div class="history-table-row">
+                            <div>Dec 20, 2024</div>
+                            <div>Hosting Renewal</div>
+                            <div>$29.99</div>
+                            <div class="div-code">
+                                <img src="images/mastercard.png" alt="mastercard" class="mastercard-icon" />
+                                1234 •••• 4242
+                            </div>
+                            <div class="history-cell">
+                                <div class="div-pending">Pending</div>
+                                <button class="button-download">
+                                    <img src="images/downloads.png" alt="downloads-icon" class="downloads-icon" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="history-table-row">
+                            <div>Dec 20, 2024</div>
+                            <div>Hosting Renewal</div>
+                            <div>$29.99</div>
+                            <div class="div-code">
+                                <img src="images/visa.png" alt="visa" class="card-icon" />
+                                Visa •••• 4242
+                            </div>
+                            <div class="history-cell">
+                                <div class="div-failed">Failed</div>
+                                <button class="button-download">
+                                    <img src="images/downloads.png" alt="downloads-icon" class="downloads-icon" />
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
