@@ -45,6 +45,11 @@
   color: #000000; 
   margin-top: 10px;
   border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.subscribtions-table-row:hover{
+  background-color: #e8eef9;
 }
 
 .arrow-cell {
