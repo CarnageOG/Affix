@@ -1,4 +1,5 @@
 // მოდალის გახსნა
+
 const addBtn = document.querySelector('.add-site-btn');
 const modal = document.getElementById('siteModal');
 
@@ -8,6 +9,12 @@ addBtn.addEventListener('click', () => {
 
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
     modal.style.display = 'none';
   }
 });

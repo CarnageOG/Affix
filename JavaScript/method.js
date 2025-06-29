@@ -21,6 +21,12 @@ const addCardBtn = document.querySelector(".add-card-btn");
     e.target.value = value;
   });
 
+  window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    cardModal.style.display = "none";
+  }
+});
+
 // ლოადინგი
 
 const form = document.querySelector(".payment-form");

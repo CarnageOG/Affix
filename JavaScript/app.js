@@ -19,6 +19,12 @@ const userBtn = document.querySelectorAll('.icon-btn')[1];
     }
   });
 
+  window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    userModal.classList.add('hidden');
+  }
+  });
+
 // ბურგერ მენიუ
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
