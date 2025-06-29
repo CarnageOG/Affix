@@ -172,58 +172,66 @@
 
 @media (max-width: 768px) and (min-width: 320px) {
 
-   .page-wrapper {
-        padding: 50px 10px;
-    }
+  .page-wrapper {
+    padding: 50px 10px;
+  }
 
-    .card h2 {
-        font-size: 16px;
-    }
+  .card h2 {
+    font-size: 16px;
+  }
 }
 
 /* შიდა გამოწერები */
 
 @media (max-width: 768px) and (min-width: 320px) {
-    .sub-section{
-        padding: 50px 10px;
-    }
-    .vector{
-        display: block;
-    }
-    .p-sub{
-        display: none;
-    }
+  .sub-section{
+    padding: 50px 10px;
+  }
+  .vector{
+     display: block;
+  }
+  .p-sub{
+    display: none;
+  }
 }
 
 /* ბარათები */
 
 @media (max-width: 768px) and (min-width: 320px) {
-    .method-wrapper {
-        padding: 50px 10px;
-    }
-    .p-add-card{
-        display: none;
-    }
+  .method-wrapper {
+    padding: 50px 10px;
+  }
+  .p-add-card{
+    display: none;
+  }
 }
 
 /* ბარათების მოდალი */
 
 @media (max-width: 549px) and (min-width: 320px) {
-    .payment-modal h2 {
-        font-size: 16px;
-    }
 
-    .form-row {
-        flex-direction: column;
-    }
+  .payment-modal h2 {
+    font-size: 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) and (min-width: 320px) {
+
+  .payment-modal{
+    padding: 19px;
+  }
 }
 
 /* გამოწერები */
 
 @media (max-width: 850px) and (min-width: 550px) {
-    .subscribtions-layout{
-        padding: 15px;
-    }
+  .subscribtions-layout{
+    padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {
