@@ -218,7 +218,33 @@
     }
 }
 
+/* გამოწერები */
+
+@media (max-width: 850px) and (min-width: 550px) {
+    .subscribtions-layout{
+        padding: 15px;
+    }
+}
 
 
+/* @media (max-width: 768px) and (min-width: 550px) {
+    .subscribtions-layout{
+        padding: 10px;
+    }
+}
 
+@media (max-width: 550px) and (min-width: 425px) {
+    .subscribtions-layout{
+        padding: 10px;
+    }
 
+    .subscribtions-table-header{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .subscribtions-table-row{
+        padding: 10px;
+        font-size: 12px;
+    }
+} */

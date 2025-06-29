@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 .subscribtions-section{
   background-color: #F1F5FF;
   display: flex;
@@ -29,7 +33,7 @@
 }
 
 .subscribtions-table {
-  overflow: hidden;
+  overflow-x: auto;
 }
 
 .subscribtions-table-header{
@@ -38,7 +42,6 @@
   padding: 16px 12px;
   font-size: 14px;
   background-color: white;
-  font-weight: 600;
   color: #000000;
   border-bottom: 1px solid #e6e6e6;
 }
