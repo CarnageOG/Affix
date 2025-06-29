@@ -16,8 +16,7 @@ html{
 }
 
 .subscribtions-wrapper {
-  max-width: 1000px;
-  width: 100%;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 20px;

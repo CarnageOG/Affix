@@ -226,25 +226,43 @@
     }
 }
 
+@media (max-width: 768px) {
+  .subscribtions-section {
+    overflow-x: auto;
+    width: 100%;
+  }
 
-/* @media (max-width: 768px) and (min-width: 550px) {
-    .subscribtions-layout{
-        padding: 10px;
-    }
+  .subscribtions-wrapper {
+    width: 100%;
+  }
+
+  .subscribtions-layout {
+    min-width: 1000px;
+    width: max-content;
+  }
 }
 
-@media (max-width: 550px) and (min-width: 425px) {
-    .subscribtions-layout{
-        padding: 10px;
-    }
+.subscribtions-section::-webkit-scrollbar {
+  height: 0px;
+}
 
-    .subscribtions-table-header{
-        padding: 10px;
-        font-size: 12px;
-    }
+/* ისტორია */
 
-    .subscribtions-table-row{
-        padding: 10px;
-        font-size: 12px;
-    }
-} */
+@media (max-width: 768px) {
+  .history-section {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .history-wrapper {
+    width: 100%;
+  }
+
+  .history-layout {
+    min-width: 1000px;
+    width: max-content;
+  }
+}
+.history-section::-webkit-scrollbar {
+  height: 0px;
+}
