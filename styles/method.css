@@ -8,11 +8,12 @@
   background-color: #F1F5FF;
   display: flex;
   justify-content: center;
-  padding: 50px 10px;
+  padding: 50px;
 }
 
 .div-method {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -30,7 +31,6 @@
 .method-card h2 {
   font-size: 20px;
   color: #000000;
-  margin-bottom: 10px;
 }
 
 .method-h2-button{
@@ -39,17 +39,20 @@
   justify-content: space-between;
 }
 
-.add-site-btn {
+.add-card-btn {
   background-color: #0078B7;
-  color: #FFFFFF;
   border: none;
   padding: 9px 12px;
   border-radius: 10px;
-  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
+}
+
+.p-add-card{
+  color: #FFFFFF;
+  font-size: 16px;
 }
 
 /* ბარათები */
@@ -64,7 +67,8 @@
   background: #F1F5FF;
   border-radius: 12px;
   padding: 16px;
-  width: 250px;
+  max-width: 300px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -156,7 +160,6 @@
 
 .payment-modal h2 {
   font-size: 24px;
-  margin-bottom: 10px;
   color: black;
 }
 
@@ -165,6 +168,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .payment-logos {

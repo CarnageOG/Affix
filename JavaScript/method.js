@@ -1,5 +1,5 @@
 // მოდალი
-const addCardBtn = document.querySelector(".add-site-btn");
+const addCardBtn = document.querySelector(".add-card-btn");
   const cardModal = document.getElementById("cardModal");
 
   addCardBtn.addEventListener("click", () => {

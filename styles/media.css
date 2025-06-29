@@ -1,11 +1,56 @@
+/* ჰედერი */
+
 @media (max-width: 768px) and (min-width: 320px) {
+    .layout {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .icon-btn-search{
+        display: flex;
+    }
+
+    .search-box{
+        display: none;
+    }
+
+    header h1{
+        display: none;
+    }
+}
+@media (max-width: 425px) and (min-width: 320px) {
+    .header {
+        padding: 20px 10px;
+    } 
+}
+
+/* საიდბარი */
+
+@media (max-width: 1024px) and (min-width: 824px) {
+    .layout {
+        grid-template-columns: 25% 75%;
+    }
+}
+
+@media (max-width: 823px) and (min-width: 769px) {
+    .layout {
+        grid-template-columns: 27% 73%;
+    }
+
+    .sidebar {
+        padding: 50px 10px 100px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+   
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     .sidebar {
         position: fixed;
-        top: 79px;
+        top: 81px;
         left: -250px;
         transition: left 0.3s ease;
         z-index: 999;
@@ -13,10 +58,167 @@
 
     .sidebar.open {
         left: 0;
-        top: 79px;
+        top: 81px;
     }
 
-    .layout {
-        grid-template-columns: 1fr;
+    .sidebar {
+        padding: 20px 5px 100px;
     }
 }
+
+/* ჩემი საიტები */
+
+@media (max-width: 768px) and (min-width: 320px) {
+
+   .site-wrapper{
+        padding: 50px 10px;
+    }
+
+    .p-new-site{
+        display: none;
+    }
+
+    .site-card h2 {
+        font-size: 20px;
+    }
+}
+
+/* შიდა საიტი */
+
+@media (max-width: 768px) and (min-width: 320px) {
+
+   .site-section{
+        padding: 50px 10px;
+    }
+
+    .top-bar h2 {
+        font-size: 16px;
+    }
+}
+
+
+/* საიტის მოდალი */
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .modal-overlay {
+    padding: 16px;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+    border-radius: 10px;
+    gap: 8px;
+    max-height: calc(100vh - 32px);
+    overflow: hidden;
+  }
+
+  .input-check-group {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .check-btn,
+  .input-check-group input,
+  select,
+  .confirm-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .warning {
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  .pay-choice {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .title1 {
+    gap: 6px;
+    padding: 10px 12px;
+  }
+
+  .title2 {
+    padding: 10px 12px;
+  }
+
+  .p-v {
+    text-align: center;
+    width: 100%;
+  }
+
+  .div-money {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .badge {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+
+  .spinner {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ანგარიშის პარამეტრები */
+
+@media (max-width: 768px) and (min-width: 320px) {
+
+   .page-wrapper {
+        padding: 50px 10px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+}
+
+/* შიდა გამოწერები */
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .sub-section{
+        padding: 50px 10px;
+    }
+    .vector{
+        display: block;
+    }
+    .p-sub{
+        display: none;
+    }
+}
+
+/* ბარათები */
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .method-wrapper {
+        padding: 50px 10px;
+    }
+    .p-add-card{
+        display: none;
+    }
+}
+
+/* ბარათების მოდალი */
+
+@media (max-width: 549px) and (min-width: 320px) {
+    .payment-modal h2 {
+        font-size: 16px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+

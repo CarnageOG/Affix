@@ -15,6 +15,7 @@ a{
 
 body{
   font-family: 'Noto Sans Georgian', sans-serif;
+  background-color: #F1F5FF;
 }
 
 section{
@@ -23,15 +24,12 @@ section{
 
 .layout {
   display: grid;
-  grid-template-columns: 16% 84%;
+  grid-template-columns: 20% 80%;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.hamburger-button{
+  width: 40px;
+  height: 40px;
 }
 
 /* ჰედერი */
@@ -46,15 +44,15 @@ section{
 }
 
 .img-logo{
-    width: 100px;
-    height: 30px;
+  width: 100px;
+  height: 30px;
 }
 
 .header-left{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .right-header{
@@ -79,6 +77,7 @@ section{
   outline: none;
   color:  black;
   font-size: 18px;
+  max-width: 150px;
 }
 
 .search-box input::placeholder {
@@ -99,11 +98,29 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-btn-search{
+  background-color: #f4f7ff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.icon-btn:hover,
+.icon-btn-search:hover {
+  background-color: #D0DAF4;
 }
 
 /* უზერ მოდალი */
@@ -115,12 +132,12 @@ section{
   background-color: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   z-index: 100;
   max-width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .user-modal.hidden {
@@ -137,20 +154,59 @@ section{
   color: rgba(0, 0, 0, 0.6);
 }
 
-.logout-btn {
-  background-color: rgba(222, 0, 0, 0.1);
-  border: none;
-  color: #DE0000;
-  padding: 10px 50px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.modal-a-button{
+  display: flex;
+  flex-direction: column;
 }
 
-/* .logout-btn:hover {
-  background-color: ;
-} */
+.logout-btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
 
+.img-logout{
+  width: 24px;
+  height: 24px;
+}
+
+.p-logout{
+  font-size: 14px;
+  color: #000000;
+}
+
+.modal-account{
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.img-modal-account{
+  width: 18px;
+  height: 20px;
+}
+
+.p-modal-account{
+  font-size: 14px;
+  color: #000000;
+}
+
+.logout-btn:hover,
+.modal-account:hover {
+  background-color: #F1F5FF;
+}
 
 /* საიდბარი */
 
@@ -160,10 +216,11 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 20px 90px;
+  padding: 50px 20px 100px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-right: 1px solid #D3DFFF;
+  overflow: hidden;
 }
 
 .menu {
@@ -202,12 +259,6 @@ section{
   background-color: #D0DAF4;
 }
 
-.icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-}
-
 .p-sidebar {
   color: #000000;
   font-size: 16px;
@@ -224,7 +275,7 @@ section{
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px;
+  padding: 10px;
   background-color: white;
   border-radius: 16px;
   cursor: pointer;
@@ -280,4 +331,25 @@ section{
   background-color: rgba(0, 0, 0, 0.1);
   margin: 10px 0;
   border-radius: 5px;
+}
+
+.menu-toggle {
+  background-color: #f4f7ff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display:  none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover{
+  background-color: #D0DAF4;
+}
+
+.hamburger-button{
+  width: 16px;
+  height: 12px;
 }

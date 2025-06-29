@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/sites.css">
+    <link rel="stylesheet" href="styles/media.css">
     <script src="JavaScript/app.js" defer></script>
     <script src="JavaScript/sites.js" defer></script>
     <title>My Sites</title>
@@ -14,10 +14,11 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <button class="menu-toggle" onclick="toggleSidebar()"><img class="hamburger-button" src="images/hamburger.png" alt="button" /></button>
             <a href="index.html" class="logo">
                 <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
             </a>
+            <h1>My Sites</h1>
         </div>
         <div class="right-header">
             <div class="search-box">
@@ -25,6 +26,9 @@
                 <input type="text" placeholder="Search">
             </div>
             <div class="icons">
+                <button class="icon-btn-search">
+                    <img src="images/Search-hiden.png" alt="Search Icon" class="icon">
+                </button>
                 <button class="icon-btn">
                     <img src="images/ring.png" alt="Bell Icon" class="icon">
                 </button>
@@ -85,7 +89,7 @@
                         <h2>My sites</h2>
                         <button class="add-site-btn">
                             <img src="images/plus.png" alt="Plus" class="icon" />
-                            Add New Site
+                            <p class="p-new-site">Add New Site</p>
                         </button>
                         <div class="modal-overlay" id="siteModal">
                             <div class="modal">
