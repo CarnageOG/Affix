@@ -50,7 +50,7 @@ window.addEventListener("keydown", (e) => {
 
 // Validation functions
 function isValidPassword(pwd) {
-  return /^[A-Za-z0-9!@#$%^&*]{6,}$/.test(pwd);
+  return /^(?=.*\d)(?=.*[!@#$%&]).{8,}$/.test(pwd);
 }
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -59,10 +59,9 @@ function isValidPhone(phone) {
   return /^[\d\s]{9,15}$/.test(phone);
 }
 
-// შეყვანის ვალიდაციის მსმენელები
+// Input validation listeners
 currentInput.addEventListener("input", () => {
-  const current = currentInput.value.trim();
-  currentError.style.display = current !== "123456" ? "block" : "none";
+  currentError.style.display = "none"; // ვალიდაცია მოხსნილია
 });
 newInput.addEventListener("input", () => {
   newError.style.display = !isValidPassword(newInput.value.trim()) ? "block" : "none";
@@ -102,7 +101,6 @@ function setupButtonLoading(btnId, spinnerId, textId, modalRef, callback) {
 // ცვლილების დამახსოვრება
 setupButtonLoading("submitBtn", "btnSpinner", "btnText", passwordModal, () => {
   if (
-    currentInput.value.trim() === "123456" &&
     isValidPassword(newInput.value.trim()) &&
     confirmInput.value.trim() === newInput.value.trim()
   ) {

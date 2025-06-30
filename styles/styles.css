@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'NotoSansGeorgian';
+    src:url('../Font/NotoSansGeorgian-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 header h1{
   font-size: 20px;
   margin-left: 50px;
@@ -14,8 +22,8 @@ a{
 }
 
 body{
-  font-family: 'Noto Sans Georgian', sans-serif;
   background-color: #F1F5FF;
+  font-family: 'NotoSansGeorgian';
 }
 
 section{
