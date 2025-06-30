@@ -42,7 +42,6 @@ const form = document.querySelector(".payment-form");
     setTimeout(() => {
       spinner.style.display = "none";
       submitText.style.display = "inline";
-      alert("Card added successfully!");
       document.getElementById("cardModal").style.display = "none";
     }, 2000);
   });
