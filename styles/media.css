@@ -1,99 +1,94 @@
 /* ჰედერი */
 
 @media (max-width: 768px) and (min-width: 320px) {
-    .layout {
-        grid-template-columns: 1fr;
-        height: 100%;
-    }
+  
+  .layout {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
 
-    .icon-btn-search{
-        display: flex;
-    }
+  .icon-btn-search{
+    display: flex;
+  }
 
-    .search-box{
-        display: none;
-    }
+  .search-box{
+    display: none;
+  }
 
-    header h1{
-        display: none;
-    }
+  header h1{
+    display: none;
+  }
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+  } 
+}
+
 @media (max-width: 425px) and (min-width: 320px) {
-    .header {
-        padding: 20px 10px;
-    } 
+  .header {
+    padding: 20px 10px;
+  } 
 }
 
 /* საიდბარი */
 
-@media (max-width: 1024px) and (min-width: 824px) {
-    .layout {
-        grid-template-columns: 25% 75%;
-    }
-}
-
-@media (max-width: 823px) and (min-width: 769px) {
-    .layout {
-        grid-template-columns: 27% 73%;
-    }
-
-    .sidebar {
-        padding: 50px 10px 100px;
-    }
+@media (max-width: 1024px) and (min-width: 320px) {
+  .sidebar {
+    padding: 50px 10px 100px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 320px) {
    
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+    display: flex;
+  }
 
-    .sidebar {
-        position: fixed;
-        top: 81px;
-        left: -250px;
-        transition: left 0.3s ease;
-        z-index: 999;
-    }
+  .sidebar {
+    position: fixed;
+    top: 81px;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding: 50px 10px 100px;
+  }
 
-    .sidebar.open {
-        left: 0;
-        top: 81px;
-    }
-
-    .sidebar {
-        padding: 20px 5px 100px;
-    }
+  .sidebar.open {
+  left: 0;
+  top: 81px;
+  }
 }
 
 /* ჩემი საიტები */
 
 @media (max-width: 768px) and (min-width: 320px) {
 
-   .site-wrapper{
-        padding: 50px 10px;
-    }
+  .site-wrapper{
+    padding: 50px 10px;
+  }
 
-    .p-new-site{
-        display: none;
-    }
+  .p-new-site{
+    display: none;
+  }
 
-    .site-card h2 {
-        font-size: 20px;
-    }
+  .site-card h2 {
+   font-size: 20px;
+  }
 }
 
 /* შიდა საიტი */
 
 @media (max-width: 768px) and (min-width: 320px) {
 
-   .site-section{
-        padding: 50px 10px;
-    }
+  .site-section{
+    padding: 50px 10px;
+  }
 
-    .top-bar h2 {
-        font-size: 16px;
-    }
+  .top-bar h2 {
+   font-size: 16px;
+  }
 }
 
 
