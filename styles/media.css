@@ -216,3 +216,9 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 340px) and (min-width: 320px) {
+  .paypal-button{
+    padding: 0px 30px;
+  }
+}

@@ -22,54 +22,58 @@
                     <h2>Add Payment Method</h2>
                     <div>
                         <div class="card-selector" data-target="#cardModal" data-arrow="#cardArrow">
-                            <div class="card-label">Card</div>
-                            <div class="card-icons">
-                                <img src="images/mastercard.png" alt="Mastercard" class="icon-mastercard">
-                                <img src="images/visa.png" alt="Visa" class="icon-visa">
-                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="cardArrow">
+                            <div class="flex-div-cards">
+                                <div class="card-label">Card</div>
+                                <div class="card-icons">
+                                    <img src="images/mastercard.png" alt="Mastercard" class="icon-mastercard">
+                                    <img src="images/visa.png" alt="Visa" class="icon-visa">
+                                    <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="cardArrow">
+                                </div>
                             </div>
-                        </div>
-                        <div class="payment-modal" id="cardModal" data-min-height="270">
-                            <form class="payment-form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    <label for="card-name">Name And Surname</label>
-                                    <input type="text" id="card-name" placeholder="placeholder text">
+                            <div class="payment-modal" id="cardModal" data-min-height="250">
+                                <form class="payment-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                        <label for="card-name">Name And Surname</label>
+                                        <input type="text" id="card-name" placeholder="placeholder text">
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="card-number">Card Number</label>
+                                        <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                    <label for="card-number">Card Number</label>
-                                    <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                        <label for="expiry">Expiry Date</label>
+                                        <input type="text" id="expiry" placeholder="mm / yy" maxlength="7">
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="cvc">CVC Code</label>
+                                        <input type="text" id="cvc" placeholder="cvc">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    <label for="expiry">Expiry Date</label>
-                                    <input type="text" id="expiry" placeholder="mm / yy" maxlength="7">
-                                    </div>
-                                    <div class="form-group">
-                                    <label for="cvc">CVC Code</label>
-                                    <input type="text" id="cvc" placeholder="cvc">
-                                    </div>
-                                </div>
-                                <button type="submit" class="submit-card" id="submitBtn">
-                                    <span class="spinner" id="spinner"></span>
-                                    <span id="submitText">Add New Card</span>
-                                </button>
-                            </form>
+                                    <button type="submit" class="submit-card" id="submitBtn">
+                                        <span class="spinner" id="spinner"></span>
+                                        <span id="submitText">Add New Card</span>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                         <div class="paypal-selector" data-target="#paypalModal" data-arrow="#paypalArrow">
-                            <div class="paypal-label">paypal</div>
-                            <div class="paypal-arrow">
-                                <img src="images/paypal.png" alt="paypal" class="paypal">
-                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="paypalArrow">
+                            <div class="flex-div-cards">
+                                <div class="paypal-label">paypal</div>
+                                <div class="paypal-arrow">
+                                    <img src="images/paypal.png" alt="paypal" class="paypal">
+                                    <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="paypalArrow">
+                                </div>
                             </div>
-                        </div>
-                        <div class="paypal-modal" id="paypalModal" data-min-height="170">
-                            <button class="paypal-button">
-                                <img src="images/paypal.png" alt="paypal" class="paypal">
-                                <p>checkout</p>
-                            </button>
-                            <p class="p-paypal">By checking out you agree with our <a class="a-paypal" href="#">Terms of Service</a> and confirm that you have read our <a class="a-paypal" href="#">Privacy Policy</a>. You can cancel recurring payments at any time.</p>
+                            <div class="paypal-modal" id="paypalModal" data-min-height="170">
+                                <button class="paypal-button">
+                                    <img src="images/paypal.png" alt="paypal" class="paypal">
+                                    <p>checkout</p>
+                                </button>
+                                <p class="p-paypal">By checking out you agree with our <a class="a-paypal" href="#">Terms of Service</a> and confirm that you have read our <a class="a-paypal" href="#">Privacy Policy</a>. You can cancel recurring payments at any time.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

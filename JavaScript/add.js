@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.add('showing');
         modal.style.height = finalHeight + 'px';
         modal.style.opacity = '1';
-        modal.style.padding = '15px';
         modal.style.pointerEvents = 'auto';
 
         arrow?.classList.add('rotate');
