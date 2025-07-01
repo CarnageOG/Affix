@@ -17,6 +17,17 @@
   transition: background 0.2s;
 }
 
+.btn-outline {
+  padding: 10px 18px;
+  border: none;
+  background-color: #DFF2FF;
+  color: #23A2E4;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .arrow-a:hover {
   background: #D0DAF4;
 }
