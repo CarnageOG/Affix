@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/add.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <script src="JavaScript/add.js" defer></script>
+    <title>Affix</title>
+</head>
+<body>
+    <header class="add-header">
+        <a href="index.html" class="logo">
+            <img class="img-logo" src="images/logo.png" alt="Affix Logo" />
+        </a>
+    </header>
+    <section class="add-section">
+            <div class="add-wrapper">
+                <div class="add-layout">
+                    <h2>Add Payment Method</h2>
+                    <div>
+                        <div class="card-selector" id="cardSelector">
+                            <div class="card-label">Card</div>
+                            <div class="card-icons">
+                                <img src="images/mastercard.png" alt="Mastercard" class="icon-mastercard">
+                                <img src="images/visa.png" alt="Visa" class="icon-visa">
+                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="arrowIcon">
+                            </div>
+                        </div>
+                        <div class="payment-modal" id="cardModal">
+                            <form class="payment-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                    <label for="card-name">Name And Surname</label>
+                                    <input type="text" id="card-name" placeholder="placeholder text">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" placeholder="mm / yy" maxlength="7">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="cvc">CVC Code</label>
+                                    <input type="text" id="cvc" placeholder="cvc">
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-card" id="submitBtn">
+                                    <span class="spinner" id="spinner"></span>
+                                    <span id="submitText">Add New Card</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> 
+    <footer>
+    </footer>
+</body>
+</html>
