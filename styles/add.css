@@ -81,6 +81,104 @@
   transform: rotate(180deg);
 }
 
+/* ფეიპალი */
+
+.paypal-modal{
+  padding: 20px 15px;
+}
+
+.paypal-selector {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.paypal-label {
+  font-size: 16px;
+  color: #000000;
+}
+
+.paypal-arrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paypal{
+  width: 90px;
+  height: 50px;
+}
+
+.paypal-button{
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  background-color: #f5c235;
+  border-radius: 8px;
+}
+
+.p-paypal{
+  font-size: 12px;
+}
+
+.a-paypal{
+  text-decoration: underline;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Modal */
 
 .payment-modal {
