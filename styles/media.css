@@ -226,51 +226,10 @@
   }
 }
 
-/* გამოწერები */
+/* ბარათის წაშლა */
 
-@media (max-width: 850px) and (min-width: 550px) {
-  .subscribtions-layout{
-    padding: 15px;
+@media (max-width: 768px) and (min-width: 320px) {
+  .delete-section{
+    padding: 50px 10px;
   }
-}
-
-@media (max-width: 768px) {
-  .subscribtions-section {
-    overflow-x: auto;
-    width: 100%;
-  }
-
-  .subscribtions-wrapper {
-    width: 100%;
-  }
-
-  .subscribtions-layout {
-    min-width: 1000px;
-    width: max-content;
-  }
-}
-
-.subscribtions-section::-webkit-scrollbar {
-  height: 0px;
-}
-
-/* ისტორია */
-
-@media (max-width: 768px) {
-  .history-section {
-    overflow-x: auto;
-    width: 100%;
-  }
-
-  .history-wrapper {
-    width: 100%;
-  }
-
-  .history-layout {
-    min-width: 1000px;
-    width: max-content;
-  }
-}
-.history-section::-webkit-scrollbar {
-  height: 0px;
 }
