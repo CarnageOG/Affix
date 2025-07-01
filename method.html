@@ -96,47 +96,10 @@
                 <div class="method-card">
                     <div class="method-h2-button">
                         <h2>Cards</h2>
-                        <button class="add-card-btn">
+                        <a href="addcard.html" class="add-card-btn">
                             <img src="images/plus.png" alt="Plus" class="icon" />
                             <p class="p-add-card">Add New Card</p>
-                        </button>
-                        <div class="modal-overlay" id="cardModal">
-                            <div class="payment-modal">
-                                <div class="h2-cards">
-                                    <h2>Add Payment Method</h2>
-                                    <div class="payment-logos">
-                                        <img src="images/mastercard.png" alt="Mastercard" class="modal-mastercard">
-                                        <img src="images/visa.png" alt="Visa" class="modal-visa">
-                                    </div>
-                                </div>
-                                <form class="payment-form">
-                                    <div class="form-row">
-                                        <div class="form-group">
-                                            <label for="card-name">Name And Surname</label>
-                                            <input type="text" id="card-name" placeholder="placeholder text">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="card-number">Card Number</label>
-                                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group">
-                                            <label for="expiry">Expiry Date</label>
-                                            <input type="text" id="expiry" placeholder="mm / yy" maxlength="7">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="cvc">CVC Code</label>
-                                            <input type="text" id="cvc" placeholder="cvc">
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="submit-card" id="submitBtn">
-                                        <span class="spinner" id="spinner"></span>
-                                        <span id="submitText">Add New Card</span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="card-list">
                         <div class="card-item">
@@ -149,11 +112,11 @@
                             </div>
                             <div class="card-actions">
                                 <button class="card-btn active">
-                                    <img src="images/star.png" alt="Star">
+                                    <img src="images/star.png" alt="Star" class="star-icon">
                                 </button>
-                                <button class="card-btn">
-                                    <img src="images/delete.png" alt="Delete">
-                                </button>
+                                <a href="delete.html" class="card-link">
+                                    <img src="images/arrow-right.png" alt="Delete" class="arrow-icon">
+                                </a>
                             </div>
                         </div>
                         <div class="card-item">
@@ -168,9 +131,9 @@
                                 <button class="card-btn">
                                     <img src="images/star.png" alt="Star">
                                 </button>
-                                <button class="card-btn">
-                                    <img src="images/delete.png" alt="Delete">
-                                </button>
+                                <a href="delete.html" class="card-link">
+                                    <img src="images/arrow-right.png" alt="Delete" class="arrow-icon">
+                                </a>
                             </div>
                         </div>
                         <div class="card-item">
@@ -185,9 +148,9 @@
                                 <button class="card-btn">
                                     <img src="images/star.png" alt="Star">
                                 </button>
-                                <button class="card-btn">
-                                    <img src="images/delete.png" alt="Delete">
-                                </button>
+                                <a href="delete.html" class="card-link">
+                                    <img src="images/arrow-right.png" alt="Delete" class="arrow-icon">
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,31 +1,31 @@
-// მოდალი
-const addCardBtn = document.querySelector(".add-card-btn");
-  const cardModal = document.getElementById("cardModal");
+// // მოდალი
+// const addCardBtn = document.querySelector(".add-card-btn");
+//   const cardModal = document.getElementById("cardModal");
 
-  addCardBtn.addEventListener("click", () => {
-    cardModal.style.display = "flex";
-  });
+//   addCardBtn.addEventListener("click", () => {
+//     cardModal.style.display = "flex";
+//   });
 
-  cardModal.addEventListener("click", (e) => {
-    if (e.target === cardModal) {
-      cardModal.style.display = "none";
-    }
-  });
+//   cardModal.addEventListener("click", (e) => {
+//     if (e.target === cardModal) {
+//       cardModal.style.display = "none";
+//     }
+//   });
 
-  const expiryInput = document.getElementById("expiry");
-  expiryInput.addEventListener("input", function (e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length >= 2) {
-      value = value.slice(0, 2) + ' / ' + value.slice(2, 4);
-    }
-    e.target.value = value;
-  });
+//   const expiryInput = document.getElementById("expiry");
+//   expiryInput.addEventListener("input", function (e) {
+//     let value = e.target.value.replace(/\D/g, '');
+//     if (value.length >= 2) {
+//       value = value.slice(0, 2) + ' / ' + value.slice(2, 4);
+//     }
+//     e.target.value = value;
+//   });
 
-  window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    cardModal.style.display = "none";
-  }
-});
+//   window.addEventListener("keydown", (e) => {
+//   if (e.key === "Escape") {
+//     cardModal.style.display = "none";
+//   }
+// });
 
 // ლოადინგი
 

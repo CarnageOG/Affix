@@ -101,13 +101,30 @@ html{
 .top-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .top-bar h2 {
   font-size: 22px;
   color: #000000;
+}
+
+.arrow-a{
+  background: #f4f7ff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  transition: background 0.2s;
+}
+
+.arrow-a:hover {
+  background: #D0DAF4;
 }
 
 .table {
