@@ -31,7 +31,6 @@
 .site-card h2 {
   font-size: 24px;
   color: #000000;
-  margin-bottom: 10px;
 }
 
 .site-card h3 {
@@ -129,9 +128,31 @@
   gap: 10px;
 }
 
+.h2-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .modal h2 {
   font-size: 22px;
-  text-align: center;
+}
+
+.addsite-modal-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: rgba(222, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addsite-modal-button:hover{
+  background-color: rgba(222, 0, 0, 0.2);
 }
 
 .modal label {
@@ -340,7 +361,7 @@ select {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 3px rgba(0,0,0,0.05);
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
 .arrow-a:hover {
@@ -362,7 +383,7 @@ select {
   font-size: 14px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-outline:hover {

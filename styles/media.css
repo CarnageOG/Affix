@@ -206,26 +206,6 @@
   }
 }
 
-/* ბარათების მოდალი */
-
-@media (max-width: 549px) and (min-width: 320px) {
-
-  .payment-modal h2 {
-    font-size: 16px;
-  }
-
-  .form-row {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 350px) and (min-width: 320px) {
-
-  .payment-modal{
-    padding: 19px;
-  }
-}
-
 /* ბარათის წაშლა */
 
 @media (max-width: 768px) and (min-width: 320px) {

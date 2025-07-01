@@ -31,7 +31,6 @@
 .card h2 {
   font-size: 20px;
   color: #000000;
-  margin-bottom: 10px;
 }
 
 .card h3 {
@@ -99,14 +98,36 @@
 .modal {
   background: white;
   border-radius: 12px;
-  width: 300px;
+  width: 500px;
   padding: 24px;
 }
 
-.modal h2 {
-  text-align: center;
+.h2-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 24px;
-  font-size: 22px;
+}
+
+.modal h2 {
+  font-size: 20px;
+}
+
+.close-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: rgba(222, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover{
+  background-color: rgba(222, 0, 0, 0.2);
 }
 
 .form-group {
@@ -128,7 +149,7 @@
   margin-top: 10px;
 }
 
-.modal button {
+.submit-button {
   margin-top: 16px;
   width: 100%;
   background-color: #0078B7;
@@ -139,10 +160,10 @@
   padding: 12px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
-.modal button:hover {
+.submit-button:hover {
   background-color: #005bb5;
 }
 

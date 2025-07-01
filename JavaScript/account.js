@@ -42,9 +42,16 @@ window.addEventListener("keydown", (e) => {
     [passwordModal, emailModal, phoneModal].forEach(m => m.style.display = "none");
   }
 });
+
 [passwordModal, emailModal, phoneModal].forEach(modal => {
   modal.addEventListener("click", (e) => {
     if (e.target === modal) modal.style.display = "none";
+  });
+});
+
+document.querySelectorAll('.close-button').forEach(button => {
+  button.addEventListener('click', () => {
+    [passwordModal, emailModal, phoneModal].forEach(m => m.style.display = "none");
   });
 });
 
@@ -61,7 +68,7 @@ function isValidPhone(phone) {
 
 // Input validation listeners
 currentInput.addEventListener("input", () => {
-  currentError.style.display = "none"; // ვალიდაცია მოხსნილია
+  currentError.style.display = "none";
 });
 newInput.addEventListener("input", () => {
   newError.style.display = !isValidPassword(newInput.value.trim()) ? "block" : "none";
