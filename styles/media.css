@@ -208,3 +208,11 @@
     padding: 50px 10px;
   }
 }
+
+/* ბარათის დამატება */
+
+@media (max-width: 550px) and (min-width: 320px) {
+  .form-row{
+    flex-direction: column;
+  }
+}

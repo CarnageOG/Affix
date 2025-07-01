@@ -73,7 +73,7 @@
 
 .arrow-icon {
   width: 12px;
-  height: 12px;
+  height: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -99,14 +99,11 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .paypal-modal.showing {
   pointer-events: auto;
-}
-
-.arrow-icon {
-  transition: transform 0.3s ease;
 }
 
 .arrow-icon.rotate {
@@ -239,6 +236,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 30px;
 }
 
 .spinner {
