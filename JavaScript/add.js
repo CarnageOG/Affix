@@ -11,45 +11,51 @@
 // გახსნა დახურვა
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cardSelector = document.getElementById('cardSelector');
-  const cardModal = document.getElementById('cardModal');
-  const arrowIcon = document.getElementById('arrowIcon');
+  const toggles = document.querySelectorAll('[data-target]');
 
-  let isOpen = false;
+  toggles.forEach(toggle => {
+    const modalSelector = toggle.getAttribute('data-target');
+    const arrowSelector = toggle.getAttribute('data-arrow');
 
-  cardSelector.addEventListener('click', () => {
-    if (!isOpen) {
-      cardModal.style.display = 'block';
-      cardModal.style.height = 'auto';
+    const modal = document.querySelector(modalSelector);
+    const arrow = document.querySelector(arrowSelector);
+    let isOpen = false;
 
-      const contentHeight = cardModal.scrollHeight;
-      const finalHeight = Math.max(contentHeight, 270);
+    toggle.addEventListener('click', () => {
+      if (!isOpen) {
+        modal.style.display = 'block';
+        modal.style.height = 'auto';
 
-      cardModal.style.height = '0px';
-      cardModal.style.opacity = '0';
-      cardModal.offsetHeight;
+        const contentHeight = modal.scrollHeight;
+        const minHeight = parseInt(modal.dataset.minHeight) || 150;
+        const finalHeight = Math.max(contentHeight, minHeight);
 
-      cardModal.classList.add('showing');
-      cardModal.style.height = finalHeight + 'px';
-      cardModal.style.opacity = '1';
-      cardModal.style.padding = '15px';
-      cardModal.style.pointerEvents = 'auto';
+        modal.style.height = '0px';
+        modal.style.opacity = '0';
+        modal.offsetHeight;
 
-      arrowIcon.classList.add('rotate');
-    } else {
-      cardModal.style.height = '0px';
-      cardModal.style.opacity = '0';
-      cardModal.style.padding = '0 15px';
-      cardModal.style.pointerEvents = 'none';
+        modal.classList.add('showing');
+        modal.style.height = finalHeight + 'px';
+        modal.style.opacity = '1';
+        modal.style.padding = '15px';
+        modal.style.pointerEvents = 'auto';
 
-      arrowIcon.classList.remove('rotate');
+        arrow?.classList.add('rotate');
+      } else {
+        modal.style.height = '0px';
+        modal.style.opacity = '0';
+        modal.style.padding = '0 15px';
+        modal.style.pointerEvents = 'none';
 
-      setTimeout(() => {
-        cardModal.classList.remove('showing');
-        cardModal.style.display = 'none';
-      }, 500);
-    }
+        arrow?.classList.remove('rotate');
 
-    isOpen = !isOpen;
+        setTimeout(() => {
+          modal.classList.remove('showing');
+          modal.style.display = 'none';
+        }, 500);
+      }
+
+      isOpen = !isOpen;
+    });
   });
 });

@@ -29,7 +29,7 @@
 .add-layout{
   background-color: #FFFFFF;
   border-radius: 12px;
-  padding: 25px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -84,7 +84,11 @@
 /* ფეიპალი */
 
 .paypal-modal{
-  padding: 20px 15px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+  pointer-events: none;
 }
 
 .paypal-selector {
@@ -95,6 +99,18 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+}
+
+.paypal-modal.showing {
+  pointer-events: auto;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
 }
 
 .paypal-label {
@@ -114,6 +130,7 @@
 }
 
 .paypal-button{
+  margin-top: 15px;
   padding: 0px 40px;
   display: flex;
   flex-direction: row;
@@ -127,57 +144,13 @@
 
 .p-paypal{
   font-size: 12px;
+  margin-top: 10px;
 }
 
 .a-paypal{
   text-decoration: underline;
   color: #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Modal */
 

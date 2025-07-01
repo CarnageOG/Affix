@@ -21,15 +21,15 @@
                 <div class="add-layout">
                     <h2>Add Payment Method</h2>
                     <div>
-                        <div class="card-selector" id="cardSelector">
+                        <div class="card-selector" data-target="#cardModal" data-arrow="#cardArrow">
                             <div class="card-label">Card</div>
                             <div class="card-icons">
                                 <img src="images/mastercard.png" alt="Mastercard" class="icon-mastercard">
                                 <img src="images/visa.png" alt="Visa" class="icon-visa">
-                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="arrowIcon">
+                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="cardArrow">
                             </div>
                         </div>
-                        <div class="payment-modal" id="cardModal">
+                        <div class="payment-modal" id="cardModal" data-min-height="270">
                             <form class="payment-form">
                                 <div class="form-row">
                                     <div class="form-group">
@@ -57,14 +57,14 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="paypal-selector" id="">
+                        <div class="paypal-selector" data-target="#paypalModal" data-arrow="#paypalArrow">
                             <div class="paypal-label">paypal</div>
                             <div class="paypal-arrow">
                                 <img src="images/paypal.png" alt="paypal" class="paypal">
-                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon">
+                                <img src="images/arrow-down.png" alt="Toggle Arrow" class="arrow-icon" id="paypalArrow">
                             </div>
                         </div>
-                        <div class="paypal-modal">
+                        <div class="paypal-modal" id="paypalModal" data-min-height="160">
                             <button class="paypal-button">
                                 <img src="images/paypal.png" alt="paypal" class="paypal">
                                 <p>checkout</p>
