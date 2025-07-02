@@ -19,6 +19,14 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
+// დახურვის ღილაკი
+
+const closeBtn = document.querySelector('.addsite-modal-button');
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
 // მონიშვნა
 
 const siteTypeCards = document.querySelectorAll('.site-type');
