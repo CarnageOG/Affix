@@ -19,10 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const modal = document.querySelector(modalSelector);
     const arrow = document.querySelector(arrowSelector);
-    let isOpen = false;
 
     toggle.addEventListener('click', () => {
-      if (!isOpen) {
+      const isCurrentlyOpen = modal.classList.contains('showing');
+
+      if (!isCurrentlyOpen) {
         modal.style.display = 'block';
         modal.style.height = 'auto';
 
@@ -53,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
           modal.style.display = 'none';
         }, 500);
       }
-
-      isOpen = !isOpen;
     });
   });
 });
