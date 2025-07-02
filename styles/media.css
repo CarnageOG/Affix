@@ -281,3 +281,49 @@
     transform: rotate(180deg);
   }
 }
+
+/* ისტორია */
+
+@media (max-width: 1024px) and (min-width: 320px) {
+
+  .history-table-row{
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .button-hiden{
+    display: flex;
+  }
+
+  .button-download{
+    display: none;
+  }
+
+  .arrow-down{
+    display: block;
+  }
+
+  .history-table-row {
+    overflow: hidden;
+    will-change: height;
+    transition: transform 0.3s ease, height 0.3s ease;
+  }
+
+  .history-table-row .div-history:not(:first-child),
+  .history-table-row .button-hiden {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .arrow-down {
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-down.rotated {
+    transform: rotate(180deg);
+  }
+}

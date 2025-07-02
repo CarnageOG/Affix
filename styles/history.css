@@ -117,3 +117,38 @@
   width: 16px;
   height: 16px;
 }
+
+.button-hiden{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #0078B7;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0px;
+  max-width: 280px;
+  width: 100%;
+}
+
+.p-dow{
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.arrow-down{
+  display: none;
+}
+
+.div-flex-arrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.media-arrow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
