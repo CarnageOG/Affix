@@ -248,8 +248,22 @@
     display: none;
   }
 
-  .arrow-down{
+  .arrow-down-sub{
     display: block;
+  }
+
+  .subscribtions-table-row {
+    overflow: hidden;
+    transition: height 0.35s ease;
+    will-change: height;
+  }
+
+  .subscribtions-table-row .div-subscribtions:not(:first-child),
+  .subscribtions-table-row .a-arrow-sub {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .subscribtions-table-row.open-row .div-subscribtions,
@@ -259,26 +273,9 @@
     transform: translateY(0);
   }
 
-  .subscribtions-table-row {
-    overflow: hidden;
-  }
-
-  .subscribtions-table-row .div-subscribtions:not(:first-child),
-  .subscribtions-table-row .a-arrow-sub {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    transition:
-      opacity 0.4s ease,
-      transform 0.4s ease;
-  }
-
-  .arrow-down {
-    transition: transform 0.3s ease;
-  }
-
-  .arrow-down.rotated {
+  .arrow-down-sub.rotated {
     transform: rotate(180deg);
+    transition: transform 0.3s ease;
   }
 }
 

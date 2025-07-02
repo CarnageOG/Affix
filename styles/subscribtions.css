@@ -39,7 +39,7 @@ html{
 .subscribtions-table-row{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 30px;
-  padding: 16px 12px;
+  padding: 8px 12px;
   font-size: 14px;
   background-color: rgba(194, 205, 231, 0.2);
   color: #000000; 
@@ -90,7 +90,7 @@ html{
   height: 11px;
 }
 
-.arrow-down{
+.arrow-down-sub{
   display: none;
 }
 
