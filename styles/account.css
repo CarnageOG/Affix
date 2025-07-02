@@ -47,7 +47,6 @@
   align-items: center;
   justify-content: space-between;
   transition: background-color 0.3s;
-  cursor: pointer;
 }
 
 .field:hover {
@@ -73,6 +72,23 @@
   background: transparent;
   outline: none;
   width: 100%;
+}
+
+.div-arrow{
+  padding: 10px 12px;
+  background: #f4f7ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  transition: background 0.2s;
+}
+
+.div-arrow:hover {
+  background: #D0DAF4;
 }
 
 .arrow-icon {
