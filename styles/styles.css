@@ -12,6 +12,11 @@
     font-display: swap;
 }
 
+.border:focus {
+  outline: none;
+  border: 1px solid #0078B7;
+}
+
 button{
   font-family: 'NotoSansGeorgian';
 }
