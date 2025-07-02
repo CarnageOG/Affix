@@ -72,17 +72,33 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 3px rgba(0,0,0,0.05);
-  transition: background 0.2s;
+  transition: background 0.3s;
 }
 
 .a-arrow-sub:hover {
   background: #D0DAF4;
 }
 
+.p-arrow{
+  font-size: 14px;
+  color: #FFFFFF;
+  display: none;
+}
+
 .arrow-icon {
   width: 6px;
   height: 11px;
+}
+
+.arrow-down{
+  display: none;
+}
+
+.media-arrow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* შიდა გამოწერა */

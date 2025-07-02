@@ -222,3 +222,62 @@
     padding: 0px 30px;
   }
 }
+
+/* გამოწერები */
+
+@media (max-width: 550px) and (min-width: 320px) {
+  .subscribtions-table-row{
+    grid-template-columns:1fr;
+    gap: 10px;
+  }
+
+  .a-arrow-sub{
+    padding: 10px;
+    background: #0078B7;
+  }
+
+  .p-arrow{
+    display: block;
+  }
+
+  .a-arrow-sub:hover {
+    background: #0D9AE3;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .arrow-down{
+    display: block;
+  }
+
+  .subscribtions-table-row.open-row .div-subscribtions,
+  .subscribtions-table-row.open-row .a-arrow-sub {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .subscribtions-table-row {
+    overflow: hidden;
+  }
+
+  .subscribtions-table-row .div-subscribtions:not(:first-child),
+  .subscribtions-table-row .a-arrow-sub {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease;
+  }
+
+  .arrow-down {
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-down.rotated {
+    transform: rotate(180deg);
+  }
+}
